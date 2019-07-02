@@ -240,5 +240,62 @@ namespace CalcAppTest
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
         }
+
+        [Test]
+        public void GetDivision_Input1and3_Returns0point33()
+        {
+
+            //Arrange
+            double number1 = 1;
+            double number2 = 3;
+
+            double expectedResult = number1 / number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetDivision_Input2and1_Returns2()
+        {
+
+            //Arrange
+            double number1 = 2;
+            double number2 = 1;
+
+            double expectedResult = number1 / number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetDivision_Input9and3_Returns3()
+        {
+
+            //Arrange
+            double number1 = 9;
+            double number2 = 3;
+
+            double expectedResult = number1 / number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
